@@ -1,0 +1,4 @@
+​if [ "$#" -ne 1 ]: I used this conditional check to ensure the user provides exactly one argument, preventing execution errors.
+​if [ -f "$PATH_ARG" ]: I used the -f flag to verify if the input is a regular file before attempting to count its contents.
+​if [ -d "$PATH_ARG" ]: This checks if the input is a directory, allowing the script to switch logic and count files instead of words.
+​wc and grep: These utilities were used to extract specific data like line counts and file extensions as requested by the prompt.
