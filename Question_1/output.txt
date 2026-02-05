@@ -1,0 +1,11 @@
+$ ./analyze.sh test_file.txt
+Analyzing file: test_file.txt
+Lines: 0, Words: 0, Characters: 0
+
+$ ./analyze.sh test_dir
+Analyzing directory: test_dir
+Total number of files: 0
+Number of .txt files: 0
+
+$ ./analyze.sh
+Error: Please provide exactly one argument.
