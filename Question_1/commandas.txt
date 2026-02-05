@@ -1,1 +1,7 @@
-
+​nano analyze.sh (To write the script)
+​chmod +x analyze.sh (To make it executable)
+​touch test_file.txt (To create a dummy file for testing)
+​mkdir test_dir (To create a dummy directory for testing)
+​./analyze.sh test_file.txt (Testing file logic)
+​./analyze.sh test_dir (Testing directory logic)
+​./analyze.sh (Testing error handling for missing arguments)
