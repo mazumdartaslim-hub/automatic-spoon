@@ -1,0 +1,17 @@
+# 1. Create a sample emails.txt file with valid, invalid, and duplicate entries
+echo "user1@gmail.com" > emails.txt
+echo "user1@gmail.com" >> emails.txt
+echo "invalid-email@com" >> emails.txt
+echo "test123@yahoo.com" >> emails.txt
+echo "wrong@format@work.com" >> emails.txt
+echo "hello@world.com" >> emails.txt
+
+# 2. Grant execution permissions to the script
+chmod +x emailcleaner.sh
+
+# 3. Run the script
+./emailcleaner.sh
+
+# 4. View results
+cat valid.txt
+cat invalid.txt
