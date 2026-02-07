@@ -1,0 +1,11 @@
+File Initialization: I created a CSV-style marks.txt file containing student roll numbers, names, and three subject marks to serve as the input for the script.
+
+​Permissions: I used chmod +x to change the file mode, allowing the shell to execute the script directly as an application.
+
+​Looping Logic: I implemented a while read loop with IFS=',' to parse the comma-separated data into individual variables for processing.
+
+​Arithmetic Operations: I used double parentheses (( )) for arithmetic comparisons to determine if each mark was below the passing threshold of 33.
+
+​Categorization: I utilized a counter variable fail_count to track individual failures and conditional if statements to filter students into the requested categories.
+
+​Summary Output: I used echo commands at the end of the script to display the final counts for each student category as required by the prompt.
