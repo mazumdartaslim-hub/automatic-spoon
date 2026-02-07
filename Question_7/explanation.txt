@@ -1,0 +1,9 @@
+​Initialization: I created a sample input file named words_list.txt and used the > redirection operator to ensure all output files were empty before the script began processing.
+
+​Regex Matching: I utilized the =~ operator and specific character classes to identify words consisting exclusively of vowels or consonants while ignoring case sensitivity.
+
+​Mixed Pattern Logic: For the mixed.txt requirement, I combined two regex conditions to ensure the word started with a consonant but also contained at least one vowel.
+
+​Loop Processing: I implemented a for loop to iterate through every word in the input file, allowing the script to categorize entries individually based on their character structure.
+
+​Permission Modification: I executed chmod +x on the script file to change its mode to executable, which is necessary to run the script in a Bash environment.
