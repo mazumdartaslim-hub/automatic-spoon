@@ -1,0 +1,8 @@
+# 1. Create the source file
+nano zombie_prevent.c
+
+# 2. Compile the C program using gcc
+gcc zombie_prevent.c -o zombie_prevent
+
+# 3. Run the executable
+./zombie_prevent
