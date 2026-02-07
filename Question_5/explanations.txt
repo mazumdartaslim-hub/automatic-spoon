@@ -1,0 +1,9 @@
+​Directory Setup: I created two directories, dirA and dirB, and populated them with a mix of unique files and common files with both matching and non-matching content for testing.
+
+​Permissions: I executed chmod +x to ensure the shell script has the necessary permissions to run as an executable.
+
+​Comparison Logic: I used the comm command combined with process substitution <() to efficiently list files unique to each directory by comparing sorted directory listings.
+
+​Content Verification: I implemented a for loop to iterate through common filenames and used the cmp -s (silent) command to determine if their binary contents were identical without modifying the files.
+
+​Error Handling: I included a conditional check at the start of the script to verify the existence of both target directories, providing a meaningful error message if they are missing.
