@@ -1,0 +1,10 @@
+# 1. Create the source file
+nano signal_demo.c
+
+# 2. Compile the C program
+gcc signal_demo.c -o signal_demo
+
+# 3. Run the executable
+./signal_demo
+
+# 4. Observe the timed output over 10 seconds
