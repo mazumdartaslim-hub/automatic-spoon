@@ -1,0 +1,9 @@
+​Signal Registration: I used the signal() function to register a custom handler, allowing the parent process to react to specific system interrupts instead of terminating immediately.
+
+​Child Process Logic: I used fork() to create two child processes that utilize sleep() and kill() to send signals to the parent at specific time intervals.
+
+​Graceful Exit: The parent process handles each signal differently, performing distinct cleanup actions for SIGTERM before exiting entirely upon receiving SIGINT.
+
+​Process Persistence: I implemented an infinite while(1) loop with a pause() system call to keep the parent process active and waiting for asynchronous signals.
+
+​Compilation: I used the gcc compiler to convert the C source code into an executable file, ensuring it was linked correctly with standard libraries.
