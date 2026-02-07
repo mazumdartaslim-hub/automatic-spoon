@@ -1,0 +1,18 @@
+# Create the script file
+nano log_analyzer.sh
+
+
+# Create a sample log file to test the script (based on the example in your image)
+printf "2025-01-12 10:15:22 INFO System started\n2025-01-12 10:16:01 ERROR Disk not found\n2025-01-12 10:16:45 WARNING High memory usage\n2025-01-12 10:17:10 ERROR Network timeout" > app.log
+
+# Grant execution permissions to the script
+chmod +x log_analyzer.sh
+
+# Execute the script using the sample log file as an argument
+./log_analyzer.sh app.log
+
+# Verify the report file was created
+ls logsummary_*.txt
+
+# View the contents of the generated report
+cat logsummary_*.txt
