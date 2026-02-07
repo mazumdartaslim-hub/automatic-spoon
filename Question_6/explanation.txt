@@ -1,0 +1,9 @@
+​Text Preprocessing: I used the tr command to strip punctuation and normalize the text into a single-column list of lowercase words to ensure accurate analysis.
+
+​Word Length Analysis: I utilized awk to calculate the length of each string, then used sort -n and head to isolate the extreme values for the longest and shortest words.
+
+​Averaging Logic: I implemented an awk script that maintains a running sum of character counts and a total word count to output the final mathematical average.
+
+​Unique Word Count: I piped the word list through sort and uniq to remove duplicates, then used wc -l to count the remaining distinct entries.
+
+​Execution Permissions: I executed chmod +x to modify the file mode, which is necessary to allow the script to be invoked directly from the command line.
