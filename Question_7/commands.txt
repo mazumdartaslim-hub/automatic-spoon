@@ -1,0 +1,13 @@
+# 1. Create a sample input file with various patterns
+echo "Area eye sky rhythm Computer shell Banana I" > words_list.txt
+
+# 2. Grant execution permissions
+chmod +x patterns.sh
+
+# 3. Run the script
+./patterns.sh
+
+# 4. View the categorized results
+echo "--- Vowels Only ---"; cat vowels.txt
+echo "--- Consonants Only ---"; cat consonants.txt
+echo "--- Mixed (Start w/ Consonant) ---"; cat mixed.txt
