@@ -1,0 +1,13 @@
+# 1. Create directories and test files
+mkdir dirA dirB
+echo "Same content" > dirA/shared.txt
+echo "Same content" > dirB/shared.txt
+echo "Different" > dirA/diff.txt
+echo "Something else" > dirB/diff.txt
+touch dirA/onlyA.txt dirB/onlyB.txt
+
+# 2. Grant execution permissions
+chmod +x synch.sh
+
+# 3. Run the script
+./synch.sh
