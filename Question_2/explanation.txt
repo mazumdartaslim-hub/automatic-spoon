@@ -1,0 +1,11 @@
+​Creating the script: I used the nano editor to write a Bash script that validates input arguments, checks for file readability, and uses string processing to parse log levels.
+
+​Permissions: I executed chmod +x on the script to modify its metadata, allowing it to be treated as an executable program by the shell.
+
+​Validation Logic: The script uses [[ -f "$LOGFILE" ]] and [[ -r "$LOGFILE" ]] to ensure the target file exists and that the user has sufficient permissions to read it before processing.
+
+​Parsing with Grep: I utilized the grep -c command to count occurrences of "INFO", "WARNING", and "ERROR" keywords, which provides the quantitative summary required by the prompt.
+
+​Isolating Recent Errors: By combining grep and tail -n 1, I successfully isolated the final error entry in the log file, representing the most recent incident.
+
+​Report Generation: I used the date command within a subshell to create a dynamic filename and redirected the script's summarized output into that file using the > operator.
