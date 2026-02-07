@@ -1,0 +1,9 @@
+Script Initialization: I used the mkdir -p command to ensure the backup/ subdirectory exists within the target path before attempting to move any files.
+
+​Background Execution: I utilized the & operator at the end of the mv command to run each file move operation as an independent background process.
+
+​PID Tracking: I used the $$ variable to display the script's own PID and the $! variable to capture and display the unique PID of each background move operation.
+
+​Process Synchronization: I implemented the wait command to pause the script's final execution until all background file operations were successfully completed.
+
+​Execution Permissions: I executed chmod +x to modify the file mode, allowing the shell to run the bg_move.sh script as an executable.
