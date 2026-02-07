@@ -1,0 +1,9 @@
+​Regex Filtering: I utilized the grep -E command with a specific regular expression pattern to identify emails that strictly follow the <letters_and_digits>@<letters>.com format.
+
+​Removing Duplicates: I piped the output of the valid email search into sort and uniq to ensure the final valid.txt file contained only distinct addresses in alphabetical order.
+
+​Inversion Logic: I used the grep -vE flag to invert the matching logic, effectively capturing all lines that failed the validation pattern and redirecting them to invalid.txt.
+
+​File Redirection: I used the > operator to redirect the filtered results into new text files, ensuring the original data remained untouched while creating organized outputs.
+
+​Permission Modification: I executed chmod +x to change the file permissions, enabling the script to be run as an executable within the shell environment.
