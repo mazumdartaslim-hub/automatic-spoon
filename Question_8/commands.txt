@@ -1,0 +1,12 @@
+# 1. Create a test directory and dummy files
+mkdir test_data
+touch test_data/file1.doc test_data/file2.jpg test_data/file3.pdf
+
+# 2. Grant execution permissions to the script
+chmod +x bg_move.sh
+
+# 3. Run the script with the test directory as an argument
+./bg_move.sh test_data
+
+# 4. Verify the backup folder contents
+ls test_data/backup
