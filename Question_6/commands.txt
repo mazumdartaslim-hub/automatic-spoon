@@ -1,0 +1,8 @@
+# 1. Create a sample input.txt file
+echo "Shell scripting is powerful. Scripting is fun and shell is fast." > input.txt
+
+# 2. Grant execution permissions
+chmod +x metrics.sh
+
+# 3. Run the script and observe output
+./metrics.sh
