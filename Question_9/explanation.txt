@@ -1,0 +1,9 @@
+​Process Creation: I used the fork() system call within a loop to create three distinct child processes that run concurrently with the parent.
+
+​Child Behavior: Each child process prints its unique PID and simulates activity using sleep() before terminating with exit(0).
+
+​Zombie Prevention: I implemented the wait() system call in the parent process to block execution until the children terminate, which collects their exit status and removes them from the process table.
+
+​Cleanup Confirmation: The parent process prints the PID of each child it successfully reaps, demonstrating that no processes were left in a zombie state.
+
+​Compilation: I used the gcc compiler to translate the C source code into a machine-executable format named zombie_prevent.
