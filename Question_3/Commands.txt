@@ -1,0 +1,11 @@
+# 1. Create the input data file
+echo "101,John,45,20,50" > marks.txt
+echo "102,Alice,80,90,75" >> marks.txt
+echo "103,Bob,30,40,60" >> marks.txt
+echo "104,Charlie,35,40,25" >> marks.txt
+
+# 2. Grant execution permissions
+chmod +x validate_results.sh
+
+# 3. Run the script
+./validate_results.sh
